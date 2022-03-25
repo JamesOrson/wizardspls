@@ -1,20 +1,4 @@
-﻿@using Client.Config;
+﻿@inherits LayoutComponentBase
 
-@inherits LayoutComponentBase
+<img src="https://i.imgur.com/pP9NOnP.png" alt="tana really sucks" height="100%" width="100%"/>
 
-<div hidden="@(AppState.IsSideNavHidden)" class="sidenav">
-    <NavMenu />
-</div>
-
-<div class="main">
-    <div class="top-row px-4">
-        <div style="float: right;">
-            <input id="hide-sidenav" type="checkbox" @bind="AppState.IsSideNavHidden" />
-            <label for="hide-sidenav">Hide nav?</label>
-        </div>
-    </div>
-
-    <div class="content px-4">
-        @Body
-    </div>
-</div>
